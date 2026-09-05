@@ -14,10 +14,12 @@ export default function MarketingLayout({
           </Link>
           <nav>
             <a
-              href="mailto:hello@tandemhr.com"
-              className="text-sm font-medium text-zinc-600 hover:text-zinc-900"
+              href="https://calendar.app.google/VYTjHytHT3GJFBSP7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700"
             >
-              Contact
+              Schedule a Call
             </a>
           </nav>
         </div>
