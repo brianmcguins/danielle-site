@@ -11,6 +11,24 @@ import {
   Workflow,
 } from "lucide-react";
 
+const highlights = [
+  {
+    title: "Streamline Your HR",
+    description:
+      "Streamline your day-to-day HR operations and initiatives with expert guidance.",
+  },
+  {
+    title: "Become 100% Compliant",
+    description:
+      "Reduce legal risk and stay 100% compliant with labor laws across all 50 states.",
+  },
+  {
+    title: "Flexible Pricing Model",
+    description:
+      "Our flexible HR outsourcing services give you the exact amount of support you need any time.",
+  },
+];
+
 const services = [
   { name: "Compliance Audits", icon: ClipboardCheck },
   { name: "Payroll & Benefits", icon: HandCoins },
@@ -40,6 +58,23 @@ export default function HomePage() {
           Get in touch
           <ArrowRight className="size-4" />
         </a>
+      </section>
+
+      <section className="bg-amber-50">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 px-6 py-16 text-center sm:grid-cols-3 sm:py-20">
+          {highlights.map(({ title, description }) => (
+            <div key={title} className="flex flex-col items-center gap-3">
+              <h2 className="relative text-2xl font-medium tracking-tight text-zinc-900">
+                {title}
+                <span
+                  aria-hidden
+                  className="absolute -top-3 -right-4 size-3.5 rounded-full bg-amber-300"
+                />
+              </h2>
+              <p className="max-w-xs font-medium text-zinc-800">{description}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
