@@ -35,7 +35,7 @@ const highlights = [
 const services = [
   { name: "Compliance Audits", icon: ClipboardCheck },
   { name: "Payroll & Benefits", icon: HandCoins },
-  { name: "Cost-Effective Recruitment", icon: UserSearch },
+  { name: "Recruiting", icon: UserSearch },
   { name: "Employee Handbooks", icon: NotebookPen },
   { name: "HR Software Implementation", icon: MonitorCog },
   { name: "Modern HR Processes", icon: Workflow },
@@ -52,9 +52,8 @@ export default function HomePage() {
           We&apos;re an embedded people team for companies that aren&apos;t ready to build the entire function internally.
         </h1>
         <p className="max-w-xl text-lg text-zinc-600">
-          Tandem HR gives growing companies senior HR expertise on a fractional
-          basis — the work gets done right, without hiring a full-time team
-          before you need one.
+          Tandem HR helps growing companies get HR right - from CHRO-level strategy to daily operations, 
+          at a fraction of the cost and risk of hiring internally. 
         </p>
         <a
           href="https://calendar.app.google/VYTjHytHT3GJFBSP7"
@@ -110,12 +109,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              HR answers for founders
+              Tandem HR: Purpose, Culture, etc.
             </h2>
-            <p className="mt-4 text-lg text-zinc-300">
-              Short videos answering the people questions founders actually
-              have — each under five minutes, no jargon, no upsell.
-            </p>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2">
             {episodes.slice(0, 2).map((episode) => (
@@ -137,7 +132,7 @@ export default function HomePage() {
             href="/videos"
             className="mt-12 inline-flex items-center gap-2 text-sm font-medium text-amber-300 hover:text-amber-200"
           >
-            Watch all videos
+            All videos
             <ArrowRight className="size-4" />
           </Link>
         </div>
