@@ -12,7 +12,19 @@ export default function MarketingLayout({
           <Link href="/" className="text-lg font-semibold tracking-tight">
             Tandem HR
           </Link>
-          <nav>
+          <nav className="flex items-center gap-6">
+            <Link
+              href="/videos"
+              className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900"
+            >
+              Videos
+            </Link>
+            <Link
+              href="/#about"
+              className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900"
+            >
+              About
+            </Link>
             <a
               href="https://calendar.app.google/VYTjHytHT3GJFBSP7"
               target="_blank"

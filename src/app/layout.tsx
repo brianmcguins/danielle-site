@@ -14,11 +14,21 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Tandem HR",
+    default: "Tandem HR — Fractional HR for Growing Companies",
     template: "%s | Tandem HR",
   },
   description:
-    "An embedded people team for companies that aren't ready to build the entire function internally.",
+    "An embedded people team for companies that aren't ready to build the entire function internally. Fractional HR leadership, compliance, payroll, recruiting, and more.",
+  openGraph: {
+    siteName: "Tandem HR",
+    title: "Tandem HR — Fractional HR for Growing Companies",
+    description:
+      "An embedded people team for companies that aren't ready to build the entire function internally.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

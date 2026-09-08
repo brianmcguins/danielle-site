@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   ArrowRight,
   ChartColumnIncreasing,
@@ -10,6 +11,8 @@ import {
   UserSearch,
   Workflow,
 } from "lucide-react";
+import { episodes } from "@/lib/episodes";
+import { YouTubeEmbed } from "@/components/youtube-embed";
 
 const highlights = [
   {
@@ -46,10 +49,12 @@ export default function HomePage() {
     <>
       <section className="mx-auto flex max-w-5xl flex-col items-start gap-6 px-6 py-24 sm:py-32">
         <h1 className="max-w-2xl text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl">
-          We're an embedded people team for companies that aren't ready to build the entire function internally.
+          We&apos;re an embedded people team for companies that aren&apos;t ready to build the entire function internally.
         </h1>
         <p className="max-w-xl text-lg text-zinc-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+          Tandem HR gives growing companies senior HR expertise on a fractional
+          basis — the work gets done right, without hiring a full-time team
+          before you need one.
         </p>
         <a
           href="https://calendar.app.google/VYTjHytHT3GJFBSP7"
@@ -85,7 +90,7 @@ export default function HomePage() {
             HR Support Customized To Your Needs
           </h2>
           <p className="mt-4 text-lg font-medium text-zinc-700">
-            Whether you're looking for consulting on key initiatives, fractional
+            Whether you&apos;re looking for consulting on key initiatives, fractional
             support, or complete HR outsourcing, we can help.
           </p>
         </div>
@@ -99,6 +104,83 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section className="bg-zinc-900">
+        <div className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+              HR answers for founders
+            </h2>
+            <p className="mt-4 text-lg text-zinc-300">
+              Short videos answering the people questions founders actually
+              have — each under five minutes, no jargon, no upsell.
+            </p>
+          </div>
+          <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2">
+            {episodes.slice(0, 2).map((episode) => (
+              <div key={episode.slug} className="flex flex-col gap-4">
+                <YouTubeEmbed
+                  youtubeId={episode.youtubeId}
+                  title={episode.title}
+                />
+                <Link
+                  href={`/videos/${episode.slug}`}
+                  className="text-lg font-semibold tracking-tight text-white hover:text-zinc-300"
+                >
+                  {episode.title}
+                </Link>
+              </div>
+            ))}
+          </div>
+          <Link
+            href="/videos"
+            className="mt-12 inline-flex items-center gap-2 text-sm font-medium text-amber-300 hover:text-amber-200"
+          >
+            Watch all videos
+            <ArrowRight className="size-4" />
+          </Link>
+        </div>
+      </section>
+
+      <section id="about" className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
+        <div className="grid grid-cols-1 items-start gap-12 sm:grid-cols-[auto_1fr]">
+          <div className="flex size-40 items-center justify-center rounded-full bg-amber-100 text-5xl font-semibold text-zinc-900 sm:size-48">
+            D
+          </div>
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
+              Led by an operator, backed by a bench
+            </h2>
+            <div className="mt-6 space-y-4 text-lg text-zinc-600">
+              <p>
+                Tandem HR was founded by Danielle, an HR leader with over a
+                decade of experience running people operations — from her first
+                compliance audit to fractional CHRO work for growing companies.
+              </p>
+              <p>
+                Behind her is a bench of senior HR practitioners across
+                recruiting, payroll and benefits, compliance, and compensation.
+                You get one accountable partner and exactly the expertise your
+                stage requires — nothing you don&apos;t need yet.
+              </p>
+              <p>
+                We work with founders who know HR matters but can&apos;t justify
+                a full-time hire — and shouldn&apos;t have to make one just to
+                get it done well.
+              </p>
+            </div>
+            <a
+              href="https://calendar.app.google/VYTjHytHT3GJFBSP7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 rounded-md bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-700"
+            >
+              Schedule a Call
+              <ArrowRight className="size-4" />
+            </a>
+          </div>
+        </div>
       </section>
     </>
   );
