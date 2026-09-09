@@ -71,7 +71,7 @@ const billingModels: {
 
 export default function BusinessModelPage() {
   return (
-    <div className="mx-auto max-w-3xl px-6 py-24 sm:py-32">
+    <div className="mx-auto max-w-3xl px-6 py-12">
       <Link
         href="/"
         className="inline-flex items-center gap-2 text-sm font-medium text-amber-300 transition-colors hover:text-amber-200"
@@ -83,7 +83,11 @@ export default function BusinessModelPage() {
         Business Model
       </h1>
       <p className="mt-4 text-lg text-zinc-400">
-        How most HR consultants bill clients
+        Below is how most HR consulting businesses bill. 
+        A big part of the sales process is figuring out which one fits best for a prospect.
+      </p>
+      <p className="mt-4 text-lg text-zinc-400">
+        I also know of some companies that quote a fixed fee for a project. It's an option, but I think it's risky & dumb.
       </p>
       <div className="mt-16 flex flex-col gap-16">
         {billingModels.map(({ name, tagline, details }, index) => (
