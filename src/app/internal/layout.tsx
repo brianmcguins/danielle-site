@@ -31,7 +31,7 @@ export default async function InternalLayout({
 
   return (
     <div className="flex flex-1 flex-col bg-zinc-900 text-white">
-      <header>
+      <header className="border-b border-zinc-800">
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
           <Link
             href="/"
