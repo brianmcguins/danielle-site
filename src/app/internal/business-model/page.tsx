@@ -87,7 +87,9 @@ export default function BusinessModelPage() {
         A big part of the sales process is figuring out which one fits best for a prospect.
       </p>
       <p className="mt-4 text-lg text-zinc-400">
-        I also know of some companies that quote a fixed fee for a project. It's an option, but I think it's risky & dumb.
+        I also know of some companies that quote a fixed fee for a project. 
+        It's an option, but I think it's risky & dumb.
+        If you just do hourly billing, both you and the client win.
       </p>
       <div className="mt-16 flex flex-col gap-16">
         {billingModels.map(({ name, tagline, details }, index) => (
