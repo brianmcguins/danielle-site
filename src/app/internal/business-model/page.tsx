@@ -51,7 +51,7 @@ const billingModels: {
     ],
   },
   {
-    name: "Per-Hire Fees for Recruiting",
+    name: "Recruiting: Per-Hire Fees",
     tagline: "e.g. X% per hire",
     details: [
       "Invoiced on candidate's start date",
