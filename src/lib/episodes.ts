@@ -13,7 +13,7 @@ export type Episode = {
 export const episodes: Episode[] = [
   {
     slug: "first-hr-hire",
-    youtubeId: "mvhNRogXjts",
+    youtubeId: "__U9EjGWook",
     title: "FTE vs. Contracting out HR",
     question: "Do I actually need a full-time HR person yet?",
     description:
