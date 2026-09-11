@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Clock } from "lucide-react";
 import { episodes } from "@/lib/episodes";
 import { YouTubeEmbed } from "@/components/youtube-embed";
 
@@ -22,15 +21,6 @@ export default function VideosPage() {
         {episodes.map((episode) => (
           <li key={episode.slug} className="flex flex-col gap-4">
             <YouTubeEmbed youtubeId={episode.youtubeId} title={episode.title} />
-            <div className="flex items-center gap-3 text-sm text-zinc-500">
-              <span className="rounded-full bg-amber-100 px-2.5 py-0.5 font-medium text-zinc-900">
-                {episode.topic}
-              </span>
-              <span className="inline-flex items-center gap-1">
-                <Clock className="size-3.5" />
-                {episode.duration}
-              </span>
-            </div>
             <Link
               href={`/videos/${episode.slug}`}
               className="text-xl font-semibold tracking-tight text-zinc-900 hover:text-zinc-600"
