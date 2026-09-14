@@ -62,7 +62,7 @@ export default async function EpisodePage({
           minutes — no pitch, just a conversation about where you are.
         </p>
         <a
-          href="https://calendar.app.google/VYTjHytHT3GJFBSP7"
+          href="https://calendar.app.google/tbmQMhAoJiXgHuTf7"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 inline-flex items-center gap-2 rounded-md bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-700"

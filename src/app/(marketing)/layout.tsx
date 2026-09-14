@@ -26,7 +26,7 @@ export default function MarketingLayout({
               About
             </Link>
             <a
-              href="https://calendar.app.google/VYTjHytHT3GJFBSP7"
+              href="https://calendar.app.google/tbmQMhAoJiXgHuTf7"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700"
