@@ -1,30 +1,42 @@
-import { NextResponse, type NextRequest } from "next/server";
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
-const INTERNAL_SUBDOMAIN = "internal.";
+const INTERNAL_HOST = "internal.goodsteadhr.com";
 
-// Host-based routing: internal.[domain] serves src/app/internal, everything
-// else serves the marketing site. No auth for now — Supabase auth comes later.
 export function proxy(request: NextRequest) {
   const host = request.headers.get("host") ?? "";
   const { pathname } = request.nextUrl;
 
-  if (host.startsWith(INTERNAL_SUBDOMAIN)) {
-    return NextResponse.rewrite(
-      new URL(pathname === "/" ? "/internal" : `/internal${pathname}`, request.url)
-    );
+  // Matches internal.goodsteadhr.com in production and internal.localhost:<port> in dev.
+  if (host === INTERNAL_HOST || host.startsWith("internal.localhost")) {
+    // Serve the /internal routes at the root of the internal subdomain.
+    if (!pathname.startsWith("/internal")) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/internal${pathname === "/" ? "" : pathname}`;
+      return NextResponse.rewrite(url);
+    }
+    // Avoid duplicate URLs: internal.goodsteadhr.com/internal/... → internal.goodsteadhr.com/...
+    const url = request.nextUrl.clone();
+    url.pathname = pathname.replace(/^\/internal/, "") || "/";
+    return NextResponse.redirect(url);
   }
 
-  // Keep /internal off the marketing domain; send it to the subdomain.
-  if (pathname === "/internal" || pathname.startsWith("/internal/")) {
-    const url = request.nextUrl.clone();
-    url.host = `${INTERNAL_SUBDOMAIN}${host}`;
-    url.pathname = pathname.slice("/internal".length) || "/";
-    return NextResponse.redirect(url);
+  // Keep one canonical home for internal pages: redirect the main domain there.
+  if (host === "goodsteadhr.com" || host === "www.goodsteadhr.com") {
+    if (pathname.startsWith("/internal")) {
+      const url = request.nextUrl.clone();
+      url.host = INTERNAL_HOST;
+      url.pathname = pathname.replace(/^\/internal/, "") || "/";
+      return NextResponse.redirect(url);
+    }
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/((?!_next|favicon.ico|.*\\..*).*)"],
+  matcher: [
+    // Run on all paths except Next.js internals and static assets.
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|mp4|ico)$).*)",
+  ],
 };
