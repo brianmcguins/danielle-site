@@ -15,14 +15,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://goodsteadhr.com"),
   title: {
-    default: "Tandem HR — Fractional HR for Growing Companies",
-    template: "%s | Tandem HR",
+    default: "Goodstead HR — Fractional HR for Growing Companies",
+    template: "%s | Goodstead HR",
   },
   description:
     "An embedded people team for companies that aren't ready to build the entire function internally. Fractional HR leadership, compliance, payroll, recruiting, and more.",
   openGraph: {
-    siteName: "Tandem HR",
-    title: "Tandem HR — Fractional HR for Growing Companies",
+    siteName: "Goodstead HR",
+    title: "Goodstead HR — Fractional HR for Growing Companies",
     description:
       "An embedded people team for companies that aren't ready to build the entire function internally.",
     type: "website",

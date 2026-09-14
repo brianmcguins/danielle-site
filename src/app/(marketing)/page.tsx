@@ -52,7 +52,7 @@ export default function HomePage() {
           We&apos;re an embedded people team for companies that aren&apos;t ready to build the entire function internally.
         </h1>
         <p className="max-w-xl text-lg text-zinc-600">
-          Tandem HR helps growing companies get HR right - from CHRO-level strategy to daily operations, 
+          Goodstead HR helps growing companies get HR right - from CHRO-level strategy to daily operations, 
           at a fraction of the cost and risk of hiring internally. 
         </p>
         <a
@@ -109,7 +109,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Tandem HR: Purpose, Culture, etc.
+              Goodstead HR: Purpose, Culture, etc.
             </h2>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2">
@@ -149,7 +149,7 @@ export default function HomePage() {
             </h2>
             <div className="mt-6 space-y-4 text-lg text-zinc-600">
               <p>
-                Tandem HR was founded by Danielle, an HR leader with over a
+                Goodstead HR was founded by Danielle, an HR leader with over a
                 decade of experience running people operations — from her first
                 compliance audit to fractional CHRO work for growing companies.
               </p>

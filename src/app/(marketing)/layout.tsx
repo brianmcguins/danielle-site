@@ -10,7 +10,7 @@ export default function MarketingLayout({
       <header className="border-b border-zinc-200">
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
           <Link href="/" className="text-lg font-semibold tracking-tight">
-            Tandem HR
+            Goodstead HR
           </Link>
           <nav className="flex items-center gap-6">
             <Link
@@ -39,7 +39,7 @@ export default function MarketingLayout({
       <main className="flex-1">{children}</main>
       <footer className="border-t border-zinc-200">
         <div className="mx-auto max-w-5xl px-6 py-8 text-sm text-zinc-500">
-          &copy; {new Date().getFullYear()} Tandem HR. All rights reserved.
+          &copy; {new Date().getFullYear()} Goodstead HR. All rights reserved.
         </div>
       </footer>
     </>

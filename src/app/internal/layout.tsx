@@ -5,10 +5,10 @@ import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: {
-    default: "Tandem HR Internal",
-    template: "%s | Tandem HR Internal",
+    default: "Goodstead HR Internal",
+    template: "%s | Goodstead HR Internal",
   },
-  description: "Internal application for Tandem HR.",
+  description: "Internal application for Goodstead HR.",
   robots: {
     index: false,
     follow: false,
@@ -38,9 +38,9 @@ export default async function InternalLayout({
             className="flex items-center gap-2 text-lg font-semibold tracking-tight"
           >
             <span className="flex size-8 items-center justify-center rounded-full bg-amber-300 text-sm font-bold text-zinc-900">
-              T
+              G
             </span>
-            Tandem HR
+            Goodstead HR
           </Link>
           <a
             href={marketingUrl}

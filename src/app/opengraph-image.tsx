@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Tandem HR — an embedded people team for growing companies";
+  "Goodstead HR — an embedded people team for growing companies";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -36,7 +36,7 @@ export default function Image() {
               backgroundColor: "#fcd34d",
             }}
           />
-          <div style={{ fontSize: 44, fontWeight: 600 }}>Tandem HR</div>
+          <div style={{ fontSize: 44, fontWeight: 600 }}>Goodstead HR</div>
         </div>
         <div
           style={{
