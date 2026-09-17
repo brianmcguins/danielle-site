@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { headers } from "next/headers";
 import { ArrowUpRight } from "lucide-react";
@@ -37,9 +38,13 @@ export default async function InternalLayout({
             href="/"
             className="flex items-center gap-2 text-lg font-semibold tracking-tight"
           >
-            <span className="flex size-8 items-center justify-center rounded-full bg-amber-300 text-sm font-bold text-zinc-900">
-              G
-            </span>
+            <Image
+              src="/logo-icon.svg"
+              alt=""
+              width={32}
+              height={32}
+              className="size-8 rounded-lg"
+            />
             Goodstead HR
           </Link>
           <a

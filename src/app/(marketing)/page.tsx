@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -140,9 +141,13 @@ export default function HomePage() {
 
       <section id="about" className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
         <div className="grid grid-cols-1 items-start gap-12 sm:grid-cols-[auto_1fr]">
-          <div className="flex size-40 items-center justify-center rounded-full bg-amber-100 text-5xl font-semibold text-zinc-900 sm:size-48">
-            D
-          </div>
+          <Image
+            src="/danielle.jpg"
+            alt="Danielle, founder of Goodstead HR"
+            width={192}
+            height={192}
+            className="size-40 rounded-full object-cover sm:size-48"
+          />
           <div className="max-w-2xl">
             <h2 className="text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
               Led by an operator, backed by a bench
