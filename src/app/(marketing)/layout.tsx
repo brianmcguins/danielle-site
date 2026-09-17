@@ -12,15 +12,23 @@ export default function MarketingLayout({
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
           <Link href="/">
             <Image
+              src="/logo-icon.svg"
+              alt="Goodstead HR"
+              width={36}
+              height={36}
+              priority
+              className="size-9 rounded-lg sm:hidden"
+            />
+            <Image
               src="/logo.svg"
               alt="Goodstead HR"
               width={202}
               height={40}
               priority
-              className="h-10 w-auto"
+              className="hidden h-10 w-auto sm:block"
             />
           </Link>
-          <nav className="flex items-center gap-6">
+          <nav className="flex items-center gap-4 sm:gap-6">
             <Link
               href="/videos"
               className="text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900"
@@ -37,7 +45,7 @@ export default function MarketingLayout({
               href="https://calendar.app.google/tbmQMhAoJiXgHuTf7"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700"
+              className="inline-flex items-center whitespace-nowrap rounded-md bg-zinc-900 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700 sm:px-4"
             >
               Schedule a Call
             </a>
