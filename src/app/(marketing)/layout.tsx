@@ -14,10 +14,10 @@ export default function MarketingLayout({
             <Image
               src="/logo.svg"
               alt="Goodstead HR"
-              width={182}
-              height={36}
+              width={202}
+              height={40}
               priority
-              className="h-9 w-auto"
+              className="h-10 w-auto"
             />
           </Link>
           <nav className="flex items-center gap-6">
