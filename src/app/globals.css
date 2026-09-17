@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f6f8f4;
+  --foreground: #202a35;
 }
 
 @theme inline {
@@ -12,10 +12,34 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/*
+ * Brand color experiment: remap the Tailwind palettes the site already uses.
+ * Primary yellow #DAE77A -> amber ramp, dark #202A35 -> zinc ramp,
+ * white-ish #F6F8F4 -> white. Delete this block to restore defaults.
+ */
+@theme {
+  --color-white: #f6f8f4;
+
+  --color-amber-50: #eff3c2;
+  --color-amber-100: #e7eea6;
+  --color-amber-200: #e1eb90;
+  --color-amber-300: #dae77a;
+
+  --color-zinc-100: #e9ede8;
+  --color-zinc-200: #d6dcd9;
+  --color-zinc-300: #b6c0c4;
+  --color-zinc-400: #8b99a3;
+  --color-zinc-500: #64747f;
+  --color-zinc-600: #4c5b67;
+  --color-zinc-700: #3a4753;
+  --color-zinc-800: #2c3844;
+  --color-zinc-900: #202a35;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #202a35;
+    --foreground: #f6f8f4;
   }
 }
 

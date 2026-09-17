@@ -16,8 +16,8 @@ export default function Image() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: 80,
-          backgroundColor: "#18181b",
-          color: "#ffffff",
+          backgroundColor: "#202a35",
+          color: "#f6f8f4",
           fontFamily: "sans-serif",
         }}
       >
@@ -33,7 +33,7 @@ export default function Image() {
               width: 28,
               height: 28,
               borderRadius: 9999,
-              backgroundColor: "#fcd34d",
+              backgroundColor: "#dae77a",
             }}
           />
           <div style={{ fontSize: 44, fontWeight: 600 }}>Goodstead HR</div>
@@ -56,7 +56,7 @@ export default function Image() {
           >
             Your embedded people team, without the full-time hires.
           </div>
-          <div style={{ fontSize: 30, color: "#d4d4d8" }}>
+          <div style={{ fontSize: 30, color: "#d6dcd9" }}>
             Fractional HR leadership for growing companies
           </div>
         </div>
