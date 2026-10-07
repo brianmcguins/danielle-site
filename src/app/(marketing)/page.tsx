@@ -142,7 +142,7 @@ export default function HomePage() {
       <section id="about" className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
         <div className="grid grid-cols-1 items-start gap-12 sm:grid-cols-[auto_1fr]">
           <Image
-            src="/danielle.jpg"
+            src="/danielle.jpeg"
             alt="Danielle, founder of Goodstead HR"
             width={192}
             height={192}
