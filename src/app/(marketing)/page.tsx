@@ -146,7 +146,7 @@ export default function HomePage() {
             alt="Danielle, founder of Goodstead HR"
             width={192}
             height={192}
-            className="size-40 rounded-full object-cover sm:size-48"
+            className="size-40 rounded-full object-cover object-top sm:size-48"
           />
           <div className="max-w-2xl">
             <h2 className="text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
