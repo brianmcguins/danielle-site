@@ -150,24 +150,23 @@ export default function HomePage() {
           />
           <div className="max-w-2xl">
             <h2 className="text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
-              Led by an operator, backed by a bench
+              You have to do HR, but at least you can hire good people
             </h2>
             <div className="mt-6 space-y-4 text-lg text-zinc-600">
               <p>
-                Goodstead HR was founded by Danielle, an HR leader with over a
-                decade of experience running people operations — from her first
-                compliance audit to fractional CHRO work for growing companies.
+                Listen... HR has to get done. 
+                You know that, so you're here. 
+                One thing you can do is hire people who know what they're doing, who like working with each other.
+                That's basically all Goodstead is - HR practitioners who put the work in to being <em>good</em> at it, and like working together.
               </p>
               <p>
-                Behind her is a bench of senior HR practitioners across
-                recruiting, payroll and benefits, compliance, and compensation.
-                You get one accountable partner and exactly the expertise your
-                stage requires — nothing you don&apos;t need yet.
+                I'm Danielle, the founder. I have ~10 years of experience running people operations.
+                I'm also a college track coach, which... you'd think pays the bills but here we are.
               </p>
               <p>
-                We work with founders who know HR matters but can&apos;t justify
-                a full-time hire — and shouldn&apos;t have to make one just to
-                get it done well.
+                Anyway - there's a lot of HR functions that need to be taken seriously, and need to be done well. 
+                I/we can help you with everything from compliance audits to recruiting to fractional CHRO work for growing companies.
+                We bill by the hour, so you only pay for what you really need.
               </p>
             </div>
             <a
